@@ -22,6 +22,7 @@ public class CheckForRotation
 
     private static boolean isRotation(String a, String b)
     {
+        // both must be of the same length && one can find second string in concatenation of the first string to itself ( if it is rotated )
         return(a.length()==b.length() && (a+a).indexOf(b)!=-1);
     }
 }
